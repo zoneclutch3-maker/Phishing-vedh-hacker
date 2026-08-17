@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phishing Awareness Demo</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f4f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      width: 90%;
+      max-width: 380px;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+
+    h1 {
+      color: #d93025;
+    }
+
+    input {
+      width: 90%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      width: 97%;
+      padding: 12px;
+      margin-top: 10px;
+      border: 0;
+      border-radius: 8px;
+      background: #333;
+      color: white;
+      font-size: 16px;
+    }
+
+    #warning {
+      display: none;
+      margin-top: 20px;
+      padding: 15px;
+      background: #fff3cd;
+      border-radius: 10px;
+      color: #664d03;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>⚠️ Security Demo</h1>
+
+    <p>This is a simulated login page for learning about phishing.</p>
+
+    <input type="text" placeholder="Demo username">
+
+    <input type="password" placeholder="Demo password">
+
+    <button onclick="showWarning()">Continue</button>
+
+    <div id="warning">
+      <strong>Phishing Awareness!</strong>
+      <p>
+        Never enter your real password, OTP, or personal information
+        into an unknown link.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function showWarning() {
+      document.getElementById("warning").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
